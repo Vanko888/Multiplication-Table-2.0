@@ -1,0 +1,27 @@
+using System;
+
+namespace _6._Foreign_Languages
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int theInteger = int.Parse(Console.ReadLine());
+            int multiplier = int.Parse(Console.ReadLine());
+            int product = 0;
+            if (multiplier <= 10)
+            {
+                for (int times = multiplier; times <= 10; times++)
+                {
+                    product = theInteger * times;
+                    Console.WriteLine($"{theInteger} X {times} = {product}");
+                }
+            }
+            else
+            {
+                product = theInteger * multiplier;
+                Console.WriteLine($"{theInteger} X {multiplier} = {product}");
+            }
+        }
+    }
+}
